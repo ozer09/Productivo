@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="textViewBlackColor">#000000</color>
+    <color name="todobackground">#BDE3FF</color>
+    <color name="todoLoginpage">#98E4FF</color>
+    <color name="todoMainPageYapilacaklar">#7FC6FB</color>
+    <color name="todoAdd_delete">#C09DEE</color>
+    <color name="todoMainPageListe">#7FC6FB</color>
+    <color name="todoGorevekle_sil">#C09DEE</color>
+    <color name="todoGorevekle">#86FFBF</color>
+    <color name="todoGorevsil">#EE9E91</color>
+    <color name="todoDiary">#C09DEE</color>
+    <color name="todoNavbarColor">#92D1FF</color>
+    <color name="todoNavbarSelectColor">#9747FF</color>
+    <color name="todoTimer">#E6E6E6</color>
+    <color name="todoTimerstop">#FF7050</color>
+    <color name="todoTimerrestart">#FFE17D</color>
+    <color name="todoTimerstart">#86FFBF</color>
+    <color name="todoTimerlowerCustom">#EE9E91</color>
+    <color name="todoTimerupperCustom">#86FFBF</color>
+</resources>

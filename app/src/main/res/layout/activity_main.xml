@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/todobackground"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/kullaniciAdi"
+        android:layout_width="303dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="464dp"
+        android:background="@drawable/edit_round"
+        android:drawableLeft="@drawable/user"
+        android:hint="Kullanıcı Adınızı Yazınız"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/sifre"
+        android:layout_width="302dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/kullaniciAdi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="380dp"
+        android:background="@drawable/edit_round"
+        android:drawableLeft="@drawable/lock"
+        android:hint="Şifrenizi Yazınız"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btngiris_yap"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/sifre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="381dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="230dp"
+        android:background="@drawable/button_round"
+        android:text="Giriş Yap"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnkayit_ol"
+        android:layout_width="157dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="473dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="138dp"
+        android:background="@color/todobackground"
+        android:shadowColor="@color/todoLoginpage"
+        android:text="Hesabınız Yoksa Kayıt Olunuz "
+        android:textAllCaps="false"
+        android:textColor="#0F1FFC"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
