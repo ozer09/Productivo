@@ -7,16 +7,14 @@
     android:background="@color/todobackground"
     tools:context=".ana_sayfa">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="269dp"
-        android:layout_marginEnd="29dp"
-        android:text="Hoşgeldiniz Giriş Yap butonu çalıştı "
-        android:textColor="@color/black"
-        android:textSize="20sp"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="405dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="586dp"
+        android:layout_marginEnd="3dp"
+        android:background="@color/todoNavbarColor"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
