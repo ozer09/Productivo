@@ -23,5 +23,6 @@
         android:layout_alignParentBottom="true"
         app:menu="@menu/bottom_navigation_menu"
         android:background="@color/todoNavbarColor"
+        app:itemTextColor="@color/black"
         />
 </RelativeLayout>
