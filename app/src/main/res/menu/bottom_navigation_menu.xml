@@ -20,7 +20,6 @@
         android:id="@+id/menu_zamanlayici"
         android:title="Zamanlayıcı"
         android:icon="@drawable/zamanlayici" />
-
     <item
         android:id="@+id/menu_muzik"
         android:title="Müzik"
