@@ -36,7 +36,5 @@ public class ana_sayfa extends AppCompatActivity {
            else
             return false;
         });
-
-
     }
 }
