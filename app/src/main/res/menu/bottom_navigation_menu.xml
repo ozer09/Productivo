@@ -2,19 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/menu_yapilacaklar"
+        android:title="Yapılacaklar"
+        android:icon="@drawable/yapilacaklar" />
+    <item
         android:id="@+id/MENU_RUTINLER"
         android:title="Rutinler"
         android:icon="@drawable/rutinler" />
 
     <item
-        android:id="@+id/menu_gunluk"
+        android:id="@+id/MENU_GUNLUK"
         android:title="Günlük"
         android:icon="@drawable/gunluk" />
 
-    <item
-        android:id="@+id/menu_yapilacaklar"
-        android:title="Yapılacaklar"
-        android:icon="@drawable/yapilacaklar" />
+
 
     <item
         android:id="@+id/menu_zamanlayici"
