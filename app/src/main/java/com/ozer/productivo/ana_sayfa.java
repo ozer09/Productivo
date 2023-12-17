@@ -13,28 +13,31 @@ public class ana_sayfa extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ana_sayfa);
+
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavView);
+
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
             int itemId = item.getItemId();
 
-            if (itemId == R.id.MENU_RUTINLER) {
-                startActivity(new Intent(ana_sayfa.this, rutinler.class));
+            if (itemId == R.id.menu_rutinler) {
+                startNewActivity(rutinler.class);
                 return true;
-            }
-           else if (itemId == R.id.MENU_GUNLUK) {
-                startActivity(new Intent(ana_sayfa.this, gunluk.class));
+            } else if (itemId == R.id.menu_gunluk) {
+                startNewActivity(gunluk.class);
                 return true;
-            }
-           else if (itemId == R.id.menu_zamanlayici) {
-                startActivity(new Intent(ana_sayfa.this, zamanlayici.class));
+            } else if (itemId == R.id.menu_zamanlayici) {
+                startNewActivity(zamanlayici.class);
                 return true;
-            }
-           else if (itemId == R.id.menu_muzik) {
-                startActivity(new Intent(ana_sayfa.this,muzik.class));
+            } else if (itemId == R.id.menu_muzik) {
+                startNewActivity(muzik.class);
                 return true;
+            } else {
+                return false;
             }
-           else
-            return false;
         });
+    }
+
+    private void startNewActivity(Class<?> cls) {
+        startActivity(new Intent(ana_sayfa.this, cls));
     }
 }

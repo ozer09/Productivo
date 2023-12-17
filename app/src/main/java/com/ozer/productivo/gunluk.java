@@ -17,11 +17,11 @@ public class gunluk extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
             int itemId = item.getItemId();
 
-            if (itemId == R.id.MENU_RUTINLER) {
+            if (itemId == R.id.menu_rutinler) {
                 startActivity(new Intent(gunluk.this, rutinler.class));
                 return true;
             }
-            else if (itemId == R.id.MENU_GUNLUK) {
+            else if (itemId == R.id.menu_gunluk) {
                 startActivity(new Intent(gunluk.this, gunluk.class));
                 return true;
             }

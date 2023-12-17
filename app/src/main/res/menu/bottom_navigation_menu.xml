@@ -6,16 +6,14 @@
         android:title="Yapılacaklar"
         android:icon="@drawable/yapilacaklar" />
     <item
-        android:id="@+id/MENU_RUTINLER"
+        android:id="@+id/menu_rutinler"
         android:title="Rutinler"
         android:icon="@drawable/rutinler" />
 
     <item
-        android:id="@+id/MENU_GUNLUK"
+        android:id="@+id/menu_gunluk"
         android:title="Günlük"
         android:icon="@drawable/gunluk" />
-
-
 
     <item
         android:id="@+id/menu_zamanlayici"
