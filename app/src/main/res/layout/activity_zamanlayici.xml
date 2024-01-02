@@ -1,42 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/todobackground"
     tools:context=".zamanlayici">
 
-    <!-- Content Container -->
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/fragmentContainer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/bottomNavView"
-        android:layout_alignParentTop="true">
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="0dp"
-            android:layout_height="55dp"
-            android:layout_marginTop="220dp"
-            android:text="Zamanlayıcı"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <!-- Bottom Navigation View -->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavView"
-        android:layout_width="match_parent"
-        android:layout_height="73dp"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/bottom_navigation_menu"
-        android:background="@color/todoNavbarColor"
-        app:itemTextColor="@color/black"
-        />
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

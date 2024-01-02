@@ -9,72 +9,65 @@
 
     <EditText
         android:id="@+id/kullaniciAdi"
-        android:layout_width="303dp"
-        android:layout_height="48dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="54dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="184dp"
         android:layout_marginEnd="54dp"
-        android:layout_marginBottom="464dp"
+        android:layout_marginBottom="36dp"
         android:background="@drawable/edit_round"
         android:drawableLeft="@drawable/user"
         android:hint="Kullanıcı Adınızı Yazınız"
         android:inputType="text"
         android:paddingLeft="15dp"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/sifre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/sifre"
-        android:layout_width="302dp"
-        android:layout_height="48dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_below="@id/kullaniciAdi"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginStart="54dp"
         android:layout_marginEnd="54dp"
-        android:layout_marginBottom="380dp"
+        android:layout_marginBottom="101dp"
         android:background="@drawable/edit_round"
         android:drawableLeft="@drawable/lock"
         android:hint="Şifrenizi Yazınız"
         android:inputType="textPassword"
         android:paddingLeft="15dp"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btngiris_yap"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/kullaniciAdi" />
 
     <Button
         android:id="@+id/btngiris_yap"
         android:layout_width="130dp"
-        android:layout_height="48dp"
+        android:layout_height="0dp"
         android:layout_below="@id/sifre"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="381dp"
-        android:layout_marginEnd="141dp"
-        android:layout_marginBottom="230dp"
+        android:layout_marginBottom="44dp"
         android:background="@drawable/button_round"
-        android:text="Giriş Yap"
+        android:text="Giris Yap"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnkayit_ol"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/sifre" />
 
     <Button
         android:id="@+id/btnkayit_ol"
         android:layout_width="157dp"
-        android:layout_height="48dp"
+        android:layout_height="0dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="127dp"
-        android:layout_marginTop="473dp"
-        android:layout_marginEnd="127dp"
-        android:layout_marginBottom="138dp"
+        android:layout_marginBottom="174dp"
         android:background="@color/todobackground"
         android:shadowColor="@color/todoLoginpage"
         android:text="Hesabınız Yoksa Kayıt Olunuz "
@@ -84,7 +77,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toBottomOf="@+id/btngiris_yap" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

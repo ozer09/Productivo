@@ -4,11 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class gunluk extends AppCompatActivity {
+public class yapilacaklar extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gunluk);
+        setContentView(R.layout.activity_yapilacaklar);
+
     }
 }

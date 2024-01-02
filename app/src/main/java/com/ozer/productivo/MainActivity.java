@@ -9,36 +9,31 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnkayit_ol;
-    Button btngiris_yap;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-// Kayıt Ol butonu eklendi
-        Button kayitButton = findViewById(R.id.btnkayit_ol); // buton id'si kullanıldı
+        // Kayıt Ol butonu eklendi
+        Button kayitButton = findViewById(R.id.btnkayit_ol);
 
         kayitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent kayitIntent = new Intent(MainActivity.this,kayit_ol.class); // "MainActivity" ve "KayitOlActivity" yerine yazıldı
+                Intent kayitIntent = new Intent(MainActivity.this, kayit_ol.class);
                 startActivity(kayitIntent);
             }
         });
 
-// Giriş yap butonu eklendi
-        Button gecisButonu = findViewById(R.id.btngiris_yap); // Buton yerine yazıldı
+        // Giriş yap butonu eklendi
+        Button gecisButonu = findViewById(R.id.btngiris_yap);
 
         gecisButonu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent ana_sayfaIntent = new Intent(MainActivity.this, ana_sayfa.class); // "MainActivity" ve "AnaSayfaActivity" yerine yazıldı
-                startActivity(ana_sayfaIntent);
+                Intent girisIntent = new Intent(MainActivity.this, yapilacaklar.class);
+                startActivity(girisIntent);
             }
         });
-
     }
 }
