@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Productivo"
         tools:targetApi="31">
         <activity
+            android:name=".gorev_sil"
+            android:exported="false" />
+        <activity
+            android:name=".gorev_ekle"
+            android:exported="false" />
+        <activity
             android:name=".zamanlayici"
             android:exported="false" />
         <activity

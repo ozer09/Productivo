@@ -7,16 +7,64 @@
     android:background="@color/todobackground"
     tools:context=".yapilacaklar">
 
+
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="65dp"
-        android:layout_marginBottom="724dp"
+        android:layout_width="193dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/edit_round"
         android:text="@string/Yapılacaklar"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/gorev_ekle"
+        android:layout_width="154dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="241dp"
+        android:layout_marginBottom="687dp"
+        android:text="@string/gorev_ekle"
+        android:visibility="visible"
+        android:background="@drawable/gorev_ekle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/gorev_sil"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="687dp"
+        android:background="@drawable/gorev_sil"
+        android:text="@string/gorev_sil"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <ListView
+        android:id="@+id/gorev"
+        android:layout_width="369dp"
+        android:layout_height="503dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="262dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="126dp"
+        android:background="@color/todoMainPageYapilacaklar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
