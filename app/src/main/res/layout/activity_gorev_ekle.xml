@@ -4,24 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/todobackground"
+    android:background="@drawable/img"
     tools:context=".gorev_ekle">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="223dp"
         android:layout_height="49dp"
-        android:layout_marginStart="94dp"
         android:layout_marginTop="65dp"
-        android:layout_marginEnd="94dp"
-        android:layout_marginBottom="777dp"
-        android:background="@drawable/button_round"
-        android:text="GÖREV EKLE"
+        android:background="@drawable/gorev_ekle"
+        android:text="@string/gorev_ekle"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextGorev"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edit_round"
+        android:hint="@string/yapılacak_gorev_ekle"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonGorevEkle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/gorev_ekle"
+        android:text="Görev Ekle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGorev" />
+
+    <ListView
+        android:id="@+id/listViewGorevler"
+        android:layout_width="409dp"
+        android:layout_height="189dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginBottom="61dp"
+        android:background="@color/todoMainPageYapilacaklar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/gorev_ekle_geri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/edit_round"
+        android:text="geri"
+        app:layout_constraintEnd_toEndOf="@+id/editTextGorev"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGorev" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,82 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/todobackground"
+    android:background="@drawable/img"
     tools:context=".yapilacaklar">
 
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="193dp"
-        android:layout_height="50dp"
+        android:layout_width="191dp"
+        android:layout_height="44dp"
         android:layout_marginTop="68dp"
+        android:layout_marginBottom="38dp"
         android:background="@drawable/edit_round"
         android:text="@string/Yapılacaklar"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/gorev_ekle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/gorev_ekle"
-        android:layout_width="154dp"
-        android:layout_height="48dp"
+        android:layout_width="158dp"
+        android:layout_height="55dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="156dp"
-        android:layout_marginEnd="241dp"
-        android:layout_marginBottom="687dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="58dp"
+        android:background="@drawable/gorev_ekle"
         android:text="@string/gorev_ekle"
         android:visibility="visible"
-        android:background="@drawable/gorev_ekle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/gorev"
+        app:layout_constraintEnd_toStartOf="@+id/gorev_sil"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
     <Button
         android:id="@+id/gorev_sil"
-        android:layout_width="163dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="232dp"
-        android:layout_marginTop="156dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="687dp"
         android:background="@drawable/gorev_sil"
         android:text="@string/gorev_sil"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/gorev_ekle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
+        app:layout_constraintStart_toEndOf="@+id/gorev_ekle"
+        app:layout_constraintTop_toTopOf="@+id/gorev_ekle" />
 
     <ListView
         android:id="@+id/gorev"
-        android:layout_width="369dp"
-        android:layout_height="503dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="21dp"
-        android:layout_marginTop="262dp"
         android:layout_marginEnd="21dp"
-        android:layout_marginBottom="126dp"
+        android:layout_marginBottom="60dp"
         android:background="@color/todoMainPageYapilacaklar"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/gorev_ekle" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_width="411dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="1dp"
         android:background="@color/todoNavbarColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.998"
+        app:layout_constraintTop_toBottomOf="@+id/gorev"
         app:menu="@menu/bottom_navigation_menu"
         tools:ignore="MissingConstraints" />
 
