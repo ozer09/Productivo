@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <string-array name="onem_siralamasi">
+            <item>Önemli</item>
+            <item>Gerekli</item>
+            <item>Yapılabilir</item>
+        </string-array>
+    </resources>

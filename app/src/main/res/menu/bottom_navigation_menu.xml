@@ -1,27 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/menu_yapilacaklar"
         android:title="Yapılacaklar"
-        android:icon="@drawable/yapilacaklar" />
-    <item
-        android:id="@+id/menu_rutinler"
-        android:title="Rutinler"
-        android:icon="@drawable/rutinler" />
+        android:icon="@drawable/todo"/>
 
     <item
         android:id="@+id/menu_gunluk"
         android:title="Günlük"
-        android:icon="@drawable/gunluk" />
+        android:icon="@drawable/diary"/>
 
     <item
         android:id="@+id/menu_zamanlayici"
         android:title="Zamanlayıcı"
-        android:icon="@drawable/zamanlayici" />
+        android:icon="@drawable/timer"/>
+
     <item
         android:id="@+id/menu_muzik"
         android:title="Müzik"
-        android:icon="@drawable/lo_fi" />
+        android:icon="@drawable/lo_fi"/>
 
 </menu>

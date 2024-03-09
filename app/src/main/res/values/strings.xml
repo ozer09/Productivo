@@ -12,5 +12,7 @@
     <string name="kullanici_adinizi_yaziniz">Kullanıcı Adınızı Yazınız</string>
     <string name="yapılacak_gorev_ekle">Yapılacak Görev</string>
     <string name="geri">geri</string>
+    <string name="bugun">Bugün</string>
+    <string name="simdi_ekle">Şimdi ekle</string>
 
 </resources>
