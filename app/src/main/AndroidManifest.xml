@@ -16,9 +16,6 @@
             android:name=".item_gorev"
             android:exported="false" />
         <activity
-            android:name=".gorev_sil"
-            android:exported="true" />
-        <activity
             android:name=".gorev_ekle"
             android:exported="false" />
         <activity
