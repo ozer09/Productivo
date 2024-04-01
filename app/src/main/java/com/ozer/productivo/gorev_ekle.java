@@ -48,8 +48,8 @@ public class gorev_ekle extends AppCompatActivity {
                 String secilenOnem = spinnerOnemSiralama.getSelectedItem().toString();
 
                 if (!yeniGorev.isEmpty()) {
-                    // Görevi ve önem sıralamasını ekle
-                    gorevListesi.add(yeniGorev + " - Önem: " + secilenOnem);
+                    String gorev = yeniGorev + "\n " + secilenOnem;
+                    gorevListesi.add(gorev);
                     adapter.notifyDataSetChanged();
                     editTextGorev.setText("");
                 }

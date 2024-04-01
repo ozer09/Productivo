@@ -5,6 +5,9 @@
     <color name="textViewBlackColor">#000000</color>
     <color name="todobackground">#BDE3FF</color>
     <color name="todoLoginpage">#CDE1E7</color>
+    <color name="Green">#16FF00</color>
+    <color name="Red">#ff0000</color>
+    <color name="Yellow">#ffff00</color>
     <color name="todoMainPageYapilacaklar">#7FC6FB</color>
     <color name="todoAdd_delete">#C09DEE</color>
     <color name="todoMainPageListe">#7FC6FB</color>
